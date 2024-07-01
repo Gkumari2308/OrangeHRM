@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using POCAssigment.PageObjects;
 using POCAssigment.Utilities;
 using System;
@@ -26,12 +27,18 @@ namespace POCAssigment.Tests
             //hm.Statusdropdown("Enabled");
             //hm.userPassSave("geeta@123", "Bhapgcolive@123", "Bhapgcolive@123");
             UserManagement um = new UserManagement(getDriver());
-            um.userNameSearch("annnhdh");
+            um.userNameSearch("geeta@123");
             um.getEdituser().Click();
             um.getStatusdropdown().Click();
+            hm.Statusdropdown("Disabled");
+            //um.getselectdrppp();
+            //um.getDisabled().Click();
+            //Actions action = new Actions(driver);
+            //action.MoveToElement(um.disabled).Build().Perform();
+
             //driver.FindElement(By.XPath("//div[text()='Disabled']")).Click();
-           
-           
+
+
             //um.getDisabled().Click();
             //um.Statusdropdown("Disabled");
 

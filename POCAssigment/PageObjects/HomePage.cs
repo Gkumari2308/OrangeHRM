@@ -52,7 +52,7 @@ namespace POCAssigment.PageObjects
         [FindsBy(How = How.XPath, Using = "//div[text()='geeta@123']")]
         public IWebElement validateUser;
 
-        
+
 
 
 

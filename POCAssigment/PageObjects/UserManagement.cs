@@ -33,11 +33,15 @@ namespace POCAssigment.PageObjects
         private IWebElement edituser;
         [FindsBy(How = How.XPath, Using = "(//div[@class='oxd-select-text-input'])[2]")]
         private IWebElement changestatus;
-        //[FindsBy(How = How.XPath, Using = "//div[text()='Disabled']")]
-        //private IWebElement disabled;
-
+        [FindsBy(How = How.XPath,Using = "//div(@role='listbox')")]
+        private IWebElement drpppp;
+        [FindsBy(How = How.XPath, Using = "//div[text()='Disabled']")]
+        public IWebElement disabled;
 
         
+
+
+
 
         public void userNameSearch(string us)
         {
@@ -55,6 +59,14 @@ namespace POCAssigment.PageObjects
             return changestatus;
 
         }
+        //public IWebElement getselectdrppp()
+        //{
+        //    return drpppp;
+        //}
+        //public IWebElement getDisabled() 
+        //{ 
+        //    return disabled;
+        //}   
         //public IWebElement getDisabled() 
         //{
         //    wait.Until(ExpectedConditions.ElementToBeClickable(disabled));

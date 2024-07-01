@@ -23,15 +23,15 @@ namespace POCAssigment.Tests
             hm.getAdminTab().Click();
             hm.getAddButton().Click();
             hm.SelectUserRole("Admin");
-            hm.employeenamefield("Ravi");
+            hm.employeenamefield("Ab");
             Thread.Sleep(5000);
             hm.selectFirstSuggestion();
             hm.Statusdropdown("Enabled");
             hm.userPassSave("geeta@123", "Bhapgcolive@123", "Bhapgcolive@123");
-            bool uservalidate=hm.validateUser.Displayed;
+            bool uservalidate = hm.validateUser.Displayed;
             TestContext.WriteLine("geeta@123 " + uservalidate);
             Assert.AreEqual(true, uservalidate);
-            
+
         }
     }
 }
